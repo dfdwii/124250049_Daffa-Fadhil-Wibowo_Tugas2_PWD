@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile — Naga Barong Tech</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="isi-hero">
+      <b>Naga Barong Technology</b>
+    </div>
+  </section>
+
+  <nav class="navbar navbar-expand-lg navbar-atas">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand" href="index.php">
+        <img src="https://imgs.search.brave.com/FGs3uLuNMP0G4KPIEa8PWN4yVaQ1GpZirW8mgXS4I0Q/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAyNS8w/Mi8yOC8xMS80MC9k/cmFnb24tOTQzNzMw/M182NDAucG5n" alt="logo" width="50" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <i class="ph-fill ph-list" style="font-size:24px;color:#32CD32;"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-3">
+          <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="form.html">Form</a></li>
+          <li class="nav-item"><a class="nav-link active" href="profil.php">Profile</a></li>
+          <li class="nav-item"><a class="nav-link" href="produk.html">Products</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <?php
+    $identitas = array(
+      'nama'      => 'Daffa Fadhil Wibowo',
+      'nim'       => '124250049',
+      'kelas'     => 'Pweb-SI-C',
+      'asal'      => 'Yogyakarta, Daerah Istimewa Yogyakarta',
+      'instagram' => 'https://www.instagram.com/daffafadhw/',
+      'linkedin'  => 'https://www.linkedin.com/in/daffa-fadhil-wibowo-95b298365/',
+      'tentang'   => 'Seorang tech enthusiast yang terinspirasi oleh kekuatan naga dan kecanggihan GPU masa depan. Passionate dalam dunia hardware, AI, dan inovasi teknologi komputer.'
+    );
+  ?>
+
+  <section class="container my-5">
+    <div class="kotak-diri text-center">
+
+      <div class="lingkaran-foto mx-auto mb-4">
+        <img src="assets/muka.png" alt="Foto Profil" class="gambar-diri" />
+      </div>
+
+      <h2 class="nama-diri"><?php echo $identitas['nama']; ?></h2>
+      <p class="nim-diri">NIM: <?php echo $identitas['nim']; ?></p>
+      <p class="kelas-diri">Kelas Praktikum: <?php echo $identitas['kelas']; ?></p>
+      <p class="kelas-diri">Asal: <?php echo $identitas['asal']; ?></p>
+
+      <div class="garis-tengah mx-auto my-4"></div>
+
+      <p class="tentang-diri"><?php echo $identitas['tentang']; ?></p>
+
+      <div class="d-flex justify-content-center gap-3 mt-4">
+        <a href="<?php echo $identitas['instagram']; ?>" target="_blank" class="tombol-kecil">
+          <i class="ph-fill ph-instagram-logo"></i> Instagram
+        </a>
+        <a href="<?php echo $identitas['linkedin']; ?>" target="_blank" class="tombol-kecil">
+          <i class="ph-fill ph-linkedin-logo"></i> LinkedIn
+        </a>
+      </div>
+
+      <a href="index.php" class="tombol mt-4 d-inline-block">← Kembali ke Halaman Utama</a>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="kaki-atas">
+      <div class="kaki-kiri">
+        <h3>Revolusi GPU Berbasis<br>Naga Barong Technology.</h3>
+        <p>Optimalkan performa komputasi dengan kecerdasan dan inovasi maksimal.</p>
+      </div>
+      <div class="kaki-kontak">
+        <h4>Contact Us</h4>
+        <p>Email: info@nagabarong.tech</p>
+        <p>Phone: +62 812-3456-7890</p>
+        <p>Address: Ngawi, Jawa Timur</p>
+      </div>
+      <div class="kaki-sosmed">
+        <h4>Follow Us</h4>
+        <div class="tombol-sosmed">
+          <a href="<?php echo $identitas['instagram']; ?>" target="_blank"><i class="ph-fill ph-instagram-logo"></i></a>
+          <a href="<?php echo $identitas['linkedin']; ?>" target="_blank"><i class="ph-fill ph-linkedin-logo"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="kaki-bawah">
+      <p>&copy; 2030 Naga Barong Tech. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
